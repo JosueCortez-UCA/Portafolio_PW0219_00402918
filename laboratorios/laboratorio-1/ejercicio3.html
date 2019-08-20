@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SingUp</title>
+</head>
+<body>
+    <form action="ejercicio3.html" method="GET">
+        <h1>Fake E-Mail sing up</h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Nombres:</label>
+            <input type="text" name="name1" placeholder="primer nombre"><input type="text" name="name2" placeholder="Segundo nombre">
+            <br>
+            <label for="lastname">Apellido:</label>
+            <input type="text" name="lastname1" placeholder="primer apellido"><input type="text" name="lastname2" placeholder="Segundo apellido">
+            <br>
+            <label for="birthday">Fecha de nacimiento</label>
+            <input type="date" name="birthday">
+            <br>
+            <label for="gender">Genero:</label>
+            <input type="radio" name="gender" value="F"> F
+            <input type="radio" name="gender" value="M"> M
+            <input type="radio" name="gender" value="Other"> Other
+            <input type="gender" name="gender">
+        </fieldset>
+
+        <fieldset>
+            <legend>SingUp Information</legend>
+
+            <label for="name">Email:</label>
+            <input type="text" name="email" placeholder="example@example.com">
+            <br>
+            <br>
+            <label for="name">Password:</label>
+            <input type="text" name="password" placeholder="password">
+            <br>
+            <br>
+            <label for="name">Verify Password:</label>
+            <input type="text" name="password" placeholder="verify password">
+        </fieldset>
+
+        <input type="submit" name="submitButton" value="Submit">
+        <input type="reset" name="resetButton" value="Reset Fields">
+    </form>
+</body>
+</html>
