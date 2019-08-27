@@ -75,6 +75,6 @@ A las líneas divisoras:
     -padding de 1px en todas direcciones
 */
 hr {
-    border: 5pc dotted grey;
+    border: 5px dotted grey;
     padding: 1px;
 }
