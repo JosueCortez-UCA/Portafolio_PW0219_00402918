@@ -74,8 +74,12 @@ button {
 }
 
 button:hover{
-  opacity: 0.4;;
+  opacity: 0.6;;
   text-transform: uppercase;
+}
+
+.links h1:hover{
+  text-transform: lowercase;
 }
 
 .header button#morado{
