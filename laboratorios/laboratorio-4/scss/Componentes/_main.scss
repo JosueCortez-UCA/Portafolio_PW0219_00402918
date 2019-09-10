@@ -1,0 +1,39 @@
+.titulo {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  color: $font-color;
+  font-size: $font-size;
+
+  > h1 {
+    font-family: $font-family;
+    background-color: rgb(218, 212, 204);
+    padding: 0.25em;
+  }
+
+  > hr {
+    color: white;
+    border-width: 1px;
+    margin: 0.5em;
+    width: 40%;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  > a > img {
+    @include set-dimensions(7rem, 7rem);
+    border-radius: 100%;
+    border: 0.5em solid transparent;
+    object-fit: cover;
+  }
+}

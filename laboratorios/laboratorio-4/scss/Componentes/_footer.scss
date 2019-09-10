@@ -1,0 +1,10 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  > button {
+    opacity: 0.8;
+    background-color: black;
+  }
+}

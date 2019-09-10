@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  flex-direction: row-reverse;
+
+  > button#uno {
+    background-color: $color-1;
+  }
+
+  > button#dos {
+    background-color: $color-2;
+  }
+
+  > button#tres {
+    background-color: $color-3;
+  }
+}

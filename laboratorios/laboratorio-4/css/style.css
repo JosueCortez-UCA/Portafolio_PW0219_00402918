@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+body {
+  width: auto;
+  height: 100vh;
+  max-width: 2100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  background-image: url(../../resources/fondo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 1em 5%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+button {
+  margin: 0.5em;
+  padding: 1em;
+  border: 1px solid transparent;
+  border-radius: 0.3em;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+header > button#uno {
+  background-color: #c018c0;
+}
+
+header > button#dos {
+  background-color: #2a2ad6;
+}
+
+header > button#tres {
+  background-color: #d38b97;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+  font-size: 1.1em;
+}
+
+.titulo > h1 {
+  font-family: "Lato", sans-serif;
+  background-color: #dad4cc;
+  padding: 0.25em;
+}
+
+.titulo > hr {
+  color: white;
+  border-width: 1px;
+  margin: 0.5em;
+  width: 40%;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links > a > img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+  border: 0.5em solid transparent;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer > button {
+  opacity: 0.8;
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */
