@@ -14,7 +14,7 @@ let addStudent = (carnet, horario, tarde) => {
   fila.innerHTML = `
         <th scope='row'>${carnet}</th>
         <td> ${horario} </td>
-        <td> ${fechaHora.toLocaleString} </td>
+        <td> ${fechaHora.toLocaleString()} </td>
         <td> ${tarde} </td>
     `;
 
