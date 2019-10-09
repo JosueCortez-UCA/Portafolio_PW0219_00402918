@@ -10,10 +10,10 @@
 <body>
     <main>
         <h2 class="topic">Bitacora</h2>
-        <form>
+        <form onsubmit="return false">
             <label>Evento:</label>
             <input type="text" name="evento" id="evento">
-            <input type="button" id="btnEvento" value="Agregar evento" class="btn" onclick="agregarEvento();">
+            <input type="button" id="btnEvento" value="Agregar evento" class="btn">
             <br>
             <br>
             <label for="">Te accidentaste?</label>
@@ -23,7 +23,7 @@
             <label for="false">No</label>
             <br>
             <br>
-            <input type="submit" value="Registrar día" class="btn" onclick="addEntry();">
+            <input type="submit" id="btnSubmit" value="Registrar día" class="btn">
         </form>
 
         <hr>
@@ -36,7 +36,7 @@
                         <th class="bitacora-accedent">Se accidento?</th>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody id="bitacoraBody"></tbody>
             </table>
         </section>
     </main>
