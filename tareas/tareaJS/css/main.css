@@ -1,0 +1,66 @@
+@import url('../font/Montserrat');
+
+html{
+    background-color: rgba(240, 236, 236, 0.425);
+}
+
+main{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 2rem;
+}
+
+main form, main h2{
+    text-align: center;
+}
+
+input[type="text"]{
+    border: 1px solid rgb(114, 70, 70);
+    border-radius: 1.5em;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+input[type="submit"]{
+    color: blueviolet;
+}
+
+hr{
+    margin: 2em;
+    border: 1.5px dotted rgb(128, 70, 128);
+}
+
+.btn{
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    box-shadow: none;
+    padding: 0.7em;
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.bitacora{
+    border: 1.5px solid rgb(204, 77, 140);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.bitacora th{
+    border: 1.5px solid rgb(204, 77, 140);
+}
+
+.bitacora-event{
+    margin: 10px 15px;
+    padding: 10px 15px;
+    width: 80%;
+    border: 1px dotted rgb(204, 77, 140);
+}
+
+.bitacora-accedent{
+    margin: 10px 15px;
+    padding: 10px 15px;
+    width: 20%;
+    border: 1px dotted rgb(204, 77, 140);
+    text-align: center;
+}
