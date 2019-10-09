@@ -1,4 +1,2 @@
-movi esta carpeta a un repositorio aparte y se continua el desarrollo de la tarea en el.
-
-enlace al repositorio:
+la parte que se realizo en grupo(ejercicio 1 y 2) se encuentra en el siguiente repositorio:
 https://github.com/JosueCortez-UCA/tareaJS
