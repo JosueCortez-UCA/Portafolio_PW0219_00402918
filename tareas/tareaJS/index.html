@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Journal</title>
+</head>
+<body>
+    <main>
+        <h2 class="topic">Bitacora</h2>
+        <form>
+            <label>Evento:</label>
+            <input type="text" name="evento" id="evento">
+            <input type="button" id="btnEvento" value="Agregar evento" class="btn" onclick="agregarEvento();">
+            <br>
+            <br>
+            <label for="">Te accidentaste?</label>
+            <input name="accident" id="accidentT" type="radio" value="true">
+            <label for="true">Si</label>
+            <input name="accident" id="accidentF" type="radio" value="false">
+            <label for="false">No</label>
+            <br>
+            <br>
+            <input type="submit" value="Registrar día" class="btn" onclick="addEntry();">
+        </form>
+
+        <hr>
+
+        <section>
+            <table class="bitacora">
+                <thead>
+                    <tr>
+                        <th class="bitacora-event">Eventos</th>
+                        <th class="bitacora-accedent">Se accidento?</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+<script src="js/main.js"></script>
+</html>
