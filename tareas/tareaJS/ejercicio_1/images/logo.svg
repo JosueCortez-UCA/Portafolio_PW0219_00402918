@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="226.044" height="225.5" viewBox="0 0 226.044 225.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f74442;
+      }
+    </style>
+  </defs>
+  <g id="Logo" transform="translate(-514.989 -1979.933)">
+    <path id="A_externa" class="cls-1" d="M345.929,198.49v11.639l-77.419,44.3H220.989v-9.549L345.929,28.933,447.032,200.1v8.44H397.087l-51.159-89.2-54.753,93.237,31-14.083Z" transform="translate(294 1951)"/>
+    <path id="A_interna" class="cls-1" d="M271.28,65.449,252.723,97.515h37.235Z" transform="translate(369.529 2037.931)"/>
+  </g>
+</svg>

@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* El CSS siguiente esta pensando primero para moviles y luego para 
+   Escritiorio*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vh);
+}
+
+/* El estilo base para moviles */
+body {
+    background-color: #112935;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between
+}
+
+.src-only {
+    display: none;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+p{
+    font-size: 0.75em;
+    padding: 1rem;
+    line-height: 25px;
+}
+
+.logo {
+    width: 90px;
+    margin: 1em;
+}
+
+.options {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    top: 30%;
+    right: 95%;
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+.options i:last-child {
+    font-size: 1.6rem;
+}
+
+/* Big area */
+.big-hero img {
+    width: 150px;
+}
+
+.big-hero h2 {
+    font-size: 1.875em;
+    font-weight: 700;
+    letter-spacing: 0.002em;
+    margin-top: 1em ;
+}
+
+.big-hero p {
+    font-size: 0.7em;;
+    color: #D7DEE6;
+
+}
+
+/* Social links*/
+.social-links{
+    list-style: none;
+    padding: 0;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+
+}
+
+.social-links li a{
+    color: #D7DEE6;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+
+.green-area {
+    background-color: #0AC693; 
+}
+
+
+.post {
+    padding: 1em;
+    margin-bottom: -2px;
+}
+.post h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125em;
+    margin: 1em;
+}
+
+.post ul {
+    list-style: none;
+}
+
+.post ul li {
+    min-height: 300px;
+    max-width: 350px;
+    margin: 2rem auto;
+}
+
+.post ul li article {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+.post article img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post article h3 {
+    color: #0D5061;
+    margin-top: 2em;
+    padding: 0em 1rem;
+    font-size: 0.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post article p {
+    color:#112935;
+    font-size: 0.75em;
+    padding: 1rem;
+    line-height: 25px;
+}
+
+/* About */
+
+.about{
+    margin-top: 2em;
+}
+
+.about h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125em;
+    margin: 2em;
+}
+
+.bio-info img{
+   width: 200px;
+}
+
+.bio-info p{
+    font-size: 16px;
+    padding: 2em;
+    text-align: left;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px 1em;
+}
+
+.contact * + * {
+    margin-top: 1.5em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0px 2em;
+    font-size: 1em;
+    width: 100%;
+}
+
+/* Decorando placeholder */
+
+::-webkit-input-placeholder { 
+    color: #D7DEE6; 
+} 
+ 
+:-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
+ 
+::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
+ 
+:-ms-input-placeholder { color: #D7DEE6; }
+
+.contact-form input[type=submit] {
+    background-color: #F74442;
+    font-weight: 400;
+    color: white;
+    font-size: 1rem;
+}
+
+.black-decoration{
+    background-image: url("../images/decoracion_oscura_small.svg");
+}
+
+footer{
+    background-color: #0D5061;
+    color:#D7DEE6;
+}
+
+footer .social-links {
+    margin: 0;
+}
+
+.menu {
+    background-color: #112935;
+    position: absolute;
+    z-index: 20;
+    top: 60px;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+}
+
+.menu {
+    list-style: none;
+    text-align: left;
+    padding: 1em;
+}
+.menu li {
+    display: block;
+    padding: 0.5em;
+    margin-top: 5px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+/* Pesonalizando estilo para tablets*/
+@media only screen and (min-width: 768px) {
+  
+    .post ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        margin: 1rem 2rem;
+        flex: 1 0 300px;
+    }
+
+
+    .logo {
+        width: 150px;
+        margin: 1.5em;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        margin-top: 1em;
+    }
+
+
+
+
+    /*TODO: FALTA CSS */
+} 
+
+@media only screen and (min-width: 1024px) {
+
+       /*TODO: FALTA CSS */
+
+
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    /*TODO: FALTA CSS */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+}

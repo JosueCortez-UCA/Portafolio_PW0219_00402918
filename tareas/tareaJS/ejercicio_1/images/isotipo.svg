@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="197" height="65.264" viewBox="0 0 197 65.264">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 30px;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #f74442;
+      }
+    </style>
+  </defs>
+  <g id="Isotipo" transform="translate(-203 -26.933)">
+    <g id="texto" transform="translate(-39)">
+      <text id="N_ldana" data-name="N       ldana" class="cls-1" transform="translate(242 72)"><tspan x="0" y="0" xml:space="preserve">N       LDANA</tspan></text>
+    </g>
+    <g id="logo" transform="translate(-1 -2)">
+      <path id="A_externa" class="cls-2" d="M257.149,78.006v3.369L234.742,94.2H220.989V91.433l36.16-62.5L286.41,78.472v2.443H271.955L257.149,55.1,241.3,82.082l8.972-4.076Z"/>
+      <path id="A_interna" class="cls-2" d="M257.043,65.449l-4.32,7.464h8.668Z"/>
+    </g>
+  </g>
+</svg>
