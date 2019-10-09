@@ -1,0 +1,4 @@
+movi esta carpeta a un repositorio aparte y se continua el desarrollo de la tarea en el.
+
+enlace al repositorio:
+https://github.com/JosueCortez-UCA/tareaJS
