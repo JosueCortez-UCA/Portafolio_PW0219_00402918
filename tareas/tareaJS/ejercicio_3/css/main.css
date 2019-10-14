@@ -19,6 +19,8 @@ hr {
 header {
     display: flex;
     flex-flow: row-reverse wrap;
+    background-color: #112935;
+    color: rgb(228, 106, 36);
 }
 
 .info {
