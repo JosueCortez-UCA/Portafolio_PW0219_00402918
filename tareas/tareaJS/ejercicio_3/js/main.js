@@ -20,7 +20,7 @@ for (let index = 0; index < dias.length; index++) {
     });
 };
 
-document.getElementById("day_1").onclick = dias[0].click();
+dias[0].click();
 
 /* CODIGO BASE */
 /*
