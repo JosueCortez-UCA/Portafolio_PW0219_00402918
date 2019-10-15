@@ -1,3 +1,4 @@
+/* CODIGO FINAL */
 let dias = document.querySelectorAll(".dias");
 let bandera = false;
 let ultima_seleccion;
