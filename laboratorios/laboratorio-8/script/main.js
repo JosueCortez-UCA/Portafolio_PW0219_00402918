@@ -21,8 +21,29 @@ let addStudent = (carnet, schedule, late) => {
     <td>${schedule}</td>
     <td>${datetime.toLocaleString()}</td>
     <td>${late}</td>
+    <td><button type="button" class="btn btn-danger delete" disabled>Drop</button></td>
+    <td><input class="form-control confirm" type="text" name="carnet"></td>
   `
   table_body.appendChild(new_row)
+
+  let confirm_field = document.querySelectorAll('.confirm')
+
+  confirm_field.forEach(element => {
+    element.addEventListener("keyup", (event) => {
+      let btn_drop = element.parentElement.previousElementSibling.firstChild
+      
+      if(element.value == element.parentElement.parentElement.firstElementChild.textContent){
+        btn_drop.disabled = false
+        
+        btn_drop.addEventListener("click", (event) => {
+          row = element.parentElement.parentElement;
+          table_body.removeChild(row)
+        })
+      }else{
+        btn_drop.disabled = true
+      }
+    })
+  })
 }
 
 /*
@@ -45,8 +66,6 @@ submit_btn.addEventListener("click", () => {
   let schedule = schedule_dropdown.options[schedule_dropdown.selectedIndex].text
   let late = parseLateSwitch(late_switch.checked)
 
-  addStudent(carnet, schedule, late)
-
   if(carnet_regex.test(carnet)){
     addStudent(carnet, schedule, late)
   }else{
@@ -54,24 +73,21 @@ submit_btn.addEventListener("click", () => {
   }
 })
 
-carnet_field.addEventListener("keyup", (e) => {
-  let keyCode = e.keyCode
-  /*
+/*
     Listener para disparar el botón cuando se aprete enter
-  */
+*/
 
-  carnet_field.addEventListener("keyup", (event)=>{
-    let keyCode = event.keyCode
-    let carnet = carnet_field.value
+carnet_field.addEventListener("keyup", (event)=>{
+  let keyCode = event.keyCode
+  let carnet = carnet_field.value
 
-    if(keyCode == 13){
-      submit_btn.click()
-    }
+  if(keyCode == 13){
+    submit_btn.click()
+  }
 
-    if(carnet_regex.test(carnet)){
-      submit_btn.disabled = false; 
-    }else{
-      submit_btn.disabled = true; 
-    }
-  })
+  if(carnet_regex.test(carnet)){
+    submit_btn.disabled = false; 
+  }else{
+    submit_btn.disabled = true; 
+  }
 })
